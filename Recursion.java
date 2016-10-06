@@ -28,6 +28,23 @@ public class Recursion
 	**/
 	public static void printNum(int n)
 		{
+			if (n == 0)
+			{
+				System.out.println(n);
+			}
+			else
+			{
+				printNum(n-1);
+				System.out.println(n);			
+			}
+		
+		}
+	
+	
+	
+	
+	public static void printNums(int n)
+		{
 			System.out.println(n);
 			n--;
 			if (n >= 0)
